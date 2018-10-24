@@ -1,4 +1,7 @@
 # IsardCube
+Based on:
+- CentOS 7
+- Four network card mainboard. (You could set it up with only two interfaces: **wan** and **lan**)
 
 ## Interfaces
 
@@ -52,6 +55,11 @@ BOOTPROTO="dhcp"
 
 ```
 
+## Selinux
+```
+sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
+```
+
 ## dnsmasq
 ```
 # DHCP
@@ -70,8 +78,12 @@ address=/cube/172.31.0.1
 #address=/#/172.31.0.1
 ```
 
-## Firewall
+## Ip forwarding
+```
+echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.d/99-sysctl.conf
+```
 
+## Firewall
 ```
 firewall-cmd --zone=public --add-service=http --permanent
 firewall-cmd --zone=public --add-service=https --permanent
