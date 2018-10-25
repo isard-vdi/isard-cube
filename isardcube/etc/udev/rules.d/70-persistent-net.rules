@@ -1,0 +1,4 @@
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="0c:c4:7a:97:ca:ea", ATTR{type}=="1", KERNEL=="e*", NAME="lan"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="0c:c4:7a:97:ca:87", ATTR{type}=="1", KERNEL=="e*", NAME="ap"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="0c:c4:7a:97:ca:86", ATTR{type}=="1", KERNEL=="e*", NAME="config"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="0c:c4:7a:97:ca:eb", ATTR{type}=="1", KERNEL=="e*", NAME="wan"

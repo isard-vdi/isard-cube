@@ -1,0 +1,7 @@
+DEVICE="ap"
+TYPE="Ethernet"
+NAME="ap"
+HWADDR="0c:c4:7a:97:ca:87"
+ONBOOT="yes"
+BOOTPROTO="none"
+BRIDGE=br-aplan

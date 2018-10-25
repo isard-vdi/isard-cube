@@ -1,0 +1,7 @@
+DEVICE="lan"
+TYPE="Ethernet"
+NAME="lan"
+HWADDR="0c:c4:7a:97:ca:ea"
+ONBOOT="yes"
+BOOTPROTO="none"
+BRIDGE=br-aplan

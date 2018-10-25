@@ -1,0 +1,4 @@
+DEVICE="wan"
+HWADDR="0c:c4:7a:97:ca:eb"
+ONBOOT="yes"
+BOOTPROTO="dhcp"
